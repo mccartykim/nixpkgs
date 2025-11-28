@@ -256,7 +256,7 @@ stdenv.mkDerivation (finalAttrs: {
       "1100"
       "1101"
       "1102"
-      # 7.x "1150"
+      "1150" # Strix Point - RDNA 3.5 iGPU
       "1151" # Strix Halo
       # "12-generic"
       "1200" # RX 9060
