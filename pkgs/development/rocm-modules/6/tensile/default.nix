@@ -58,6 +58,7 @@ buildPythonPackage rec {
   patches = [
     ./tensile-solutionstructs-perf-fix.diff
     ./tensile-create-library-dont-copy-twice.diff
+    ./tensile-add-gfx1150-support.patch
     (fetchpatch {
       # [PATCH] Extend Tensile HIP ISA compatibility
       sha256 = "sha256-d+fVf/vz+sxGqJ96vuxe0jRMgbC5K6j5FQ5SJ1e3Sl8=";
