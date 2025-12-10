@@ -256,7 +256,7 @@ stdenv.mkDerivation (finalAttrs: {
       "1100"
       "1101"
       "1102"
-      # 7.x "1150"
+      "1150" # Strix Point (Radeon 890M)
       "1151" # Strix Halo
       # "12-generic"
       "1200" # RX 9060
