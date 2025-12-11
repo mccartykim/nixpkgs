@@ -147,7 +147,7 @@ stdenv.mkDerivation (finalAttrs: {
     substituteInPlace cmake/build-options.cmake \
       --replace-fail 'Tensile_CPU_THREADS ""' 'Tensile_CPU_THREADS "$ENV{NIX_BUILD_CORES}"'
     substituteInPlace CMakeLists.txt \
-      --replace-fail "4.43.0" "4.44.0" \
+      --replace-fail "4.43.0" "4.45.0" \
       --replace-fail '0.10' '1.0'
   ''
   # Fixes sh: line 1: /usr/bin/diff: No such file or directory
