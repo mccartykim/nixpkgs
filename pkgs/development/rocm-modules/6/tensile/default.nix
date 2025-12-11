@@ -18,16 +18,17 @@
 
 buildPythonPackage rec {
   pname = "tensile";
-  # Using a specific commit which has compression support from after the 6.4 release
+  # Using a specific commit which has compression support and gfx1150 support
   # Without compression packages are too large for hydra
-  version = "6.4-unstable-2025-06-12";
+  # gfx1150 (Strix Point/Radeon 890M) support added in commit 235405f247b9
+  version = "6.4-unstable-2025-12-03";
   format = "pyproject";
 
   src = fetchFromGitHub {
     owner = "ROCm";
     repo = "Tensile";
-    rev = "1ce87a9fe73610ffb962082f0a882360cd39b103";
-    hash = "sha256-qIuoIbmridy1HQVV10qPTzbccuxNJPsOvePaQQnClZc=";
+    rev = "678c33745fd8dbcadbd22f95595317ee70b41c53";
+    hash = "sha256-/0GvCmiymlVCcBwurh+0xjJUUr6GB4b0X2fXXZtC4fI=";
   };
 
   # TODO: It should be possible to run asm caps test ONCE for all supported arches
